@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Cadastro de fornecedores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="cadastro-fornecedores">Cadastrar fornecedor</h1>
+    <form action="/cadastrarFornecedor" method="POST">
+        <label for="nome">Nome do fornecedor</label>
+        <input type="text" id="nome" name="nome"/> <br>
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone"/> <br>
+        <label for="empresa">Empresa</label>
+        <input type="text" id="empresa" name="empresa"/> <br>
+        <button type="submit" value="enviar" class="botao">Adicionar fornecedor</button>
+    </form>   
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>Cadastro de procedimentos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="cadastro-procedimentos">Cadastrar procedimento</h1>
+    <form action="/procedimentos" method="POST">
+        <label for="procedimento">Procedimento</label>
+        <input type="text" id="procedimento" name="procedimento"/> <br>
+        <label for="descricao">Descrição</label>
+        <input type="text" id="descricao" name="descricao"/> <br>
+        <button type="submit" value="enviar" class="botao">Adicionar procedimento</button>
+    </form>   
+</body>
+</html>

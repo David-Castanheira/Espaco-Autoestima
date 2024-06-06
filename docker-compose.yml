@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+ web:
+  build: .
+  command: python app.py 
+  links:
+    - db
+  volumes:
+    - ./controllers:/app
+  ports:
+    - "5000:5000"
+ db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: espacoautoestima
+      MYSQL_HOST: localhost
+      MYSQL_USER: root
+      MYSQL_PASSWORD: E$p@c02024!
+    ports:
+      - "3306:3306"

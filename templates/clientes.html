@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <title>Clientes cadastrados</title>
+    <body>
+        <h1>Lista de clientes</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>E-mail</th>
+                <th>CPF</th>
+                <th>Ações</th>
+            </tr>
+            {% for cliente in clientes %}
+            <tr>
+                <th>{{ cliente[0] }}</th>
+                <th>{{ cliente[1] }}</th>
+                <th>{{ cliente[2] }}</th>
+                <th>{{ cliente[3] }}</th>
+                <th>{{ cliente[4] }}</th>
+                <th>{{ cliente[5] }}</th>
+                <th>{{ cliente[6] }}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

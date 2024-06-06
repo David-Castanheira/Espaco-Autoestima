@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <title>Fornecedores cadastrados</title>
+    <body>
+        <h1>Lista de fornecedores</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Empresa</th>
+            </tr>
+            {% for fornecedor in fornecedores %}
+            <tr>
+                <th>{{ fornecedor[0] }}</th>
+                <th>{{ fornecedor[1] }}</th>
+                <th>{{ fornecedor[2] }}</th>
+                <th>{{ fornecedor[3] }}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

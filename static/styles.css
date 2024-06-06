@@ -1,0 +1,80 @@
+/* Padrão */
+:root {
+    --primary: #00D47D;
+    --secondary: #0ECE6B;
+    --tertiary: #00856F;
+    --quaternary: #8FAFA7;
+}
+
+/* Sempre que possível, utilizar o formato woff2 e woff para fontes */
+@font-face {
+    font-family: "Oranienbaum", serif;
+    src: url(/fonts/Oranienbaum-Regular.ttf) format('ttf');
+}
+
+/* Global */
+* {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    padding-top: 10% !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Formulário de cadastro */
+form {
+    text-align: center;
+    display: block;
+}
+
+/* label, p {
+    font-size: 16px;
+    padding: 5px 0;
+} */
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 5px 0;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #9c9c9c;
+}
+
+/* Botão dos formulários */
+button.botao {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Badge de mensagens */
+.notification-is-danger {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    color: #FFFFFF;
+    width: 20%;
+    border-radius: 8px;
+}
+

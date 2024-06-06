@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <title>Consultas agendadas</title>
+    <body>
+        <h1>Lista de consultas</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Profissional</th>
+                <th>Sessão</th>
+                <th>Horário</th>
+            </tr>
+            {% for agendamento in agendamentos %}
+            <tr>
+                <th>{{ agendamento[0] }}</th>
+                <th>{{ agendamento[1] }}</th>
+                <th>{{ agendamento[2] }}</th>
+                <th>{{ agendamento[3] }}</th>
+                <th>{{ agendamento[4] }}</th>
+                <th>{{ agendamento[5] }}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

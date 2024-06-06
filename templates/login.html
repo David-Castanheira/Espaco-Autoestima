@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <h1 class="login">Fazer login</h1>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="notification-is-danger">
+                {{ messages[0] }} Clique para se <a href="{{ url_for('cadastro') }}">cadastrar</a>
+            </div>
+        {% endif %}
+        {% endwith %}
+        <form action="/login" method="POST">
+            <input type="text" id="email" name="email" placeholder="E-mail"/> <br>
+            <input type="password" id="senha" name="senha" placeholder="Senha"/> <br>
+            <button type="submit" value="enviar" class="botao">Entrar</button>
+            <span>Ainda não possui uma conta? <a href="{{ url_for('cadastro') }}">Cadastre-se</a></span>
+        </form>   
+    </body>
+</html>

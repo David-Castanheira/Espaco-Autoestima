@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <title>Produtos cadastrados</title>
+    <body>
+        <h1>Lista de produtos</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Data de validade</th>
+                <th>Quantidade</th>
+                <th>Marca</th>
+                <th>Preço</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+            {% for produto in produtos %}
+            <tr>
+                <th>{{ produto[0] }}</th>
+                <th>{{ produto[1] }}</th>
+                <th>{{ produto[2] }}</th>
+                <th>{{ produto[3] }}</th>
+                <th>{{ produto[4] }}</th>
+                <th>{{ produto[5] }}</th>
+                <th>{{ produto[6] }}</th>
+                <th>{{ produto[7] }}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
